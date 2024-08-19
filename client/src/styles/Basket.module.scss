@@ -1,0 +1,112 @@
+@import "variables";
+.header {
+  @include backfon;
+  text-align: center;
+  padding: 30px 30px;
+  font-size: 25px;
+}
+.container {
+  display: flex;
+  @include backfon;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 1rem;
+  height: 360px;
+  width: min(660px, 100%);
+  text-align: center;
+  margin-bottom: 40px;
+  button {
+    align-self: flex-start;
+  }
+}
+.image {
+  border-radius: 10px;
+  width: max(250px, 90%);
+  img {
+    border-radius: 10px;
+    width: min(300px, 90%);
+    height: 100%;
+  }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: max(150px, 90%);
+  h4 {
+    padding-top: 22px;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+  }
+
+  .quantity {
+    margin-top: 10px;
+    border: 1px solid var(--brand-dark);
+    padding: 1px 5px;
+  }
+  .suma {
+    padding-top: 40px;
+  }
+  .price {
+    padding-left: 15px;
+    color: red;
+  }
+  button {
+    padding: 3px 10px;
+  }
+}
+.basket {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 96px;
+  @media screen and (max-width: $bp-tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order {
+    position: sticky;
+    bottom: 40px;
+    @include backfon;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: min(360px, 35%);
+    padding: 30px;
+
+    p {
+      font-size: 20px;
+      font-weight: 600;
+      padding-bottom: 20px;
+    }
+    button {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .sum {
+      padding: 0 5px 0 15px;
+      color: red;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      position: relative;
+      margin-top: 40px;
+      width: 90%;
+    }
+  }
+}
+.shoppingCart {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.cart {
+  width: min(660px, 60%);
+  @media screen and (max-width: $bp-tablet) {
+    width: 90%;
+  }
+}

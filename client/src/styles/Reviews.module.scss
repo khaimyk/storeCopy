@@ -1,0 +1,36 @@
+.container {
+  justify-content: space-between;
+  margin-bottom: 8px;
+  h3 {
+    padding-top: 10px;
+  }
+
+  .input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: aqua;
+  }
+  p {
+    color: #888;
+  }
+}
+.reviewsItem {
+  display: flex;
+  justify-content: space-between;
+  .review {
+    padding: 20px;
+  }
+}
+
+.rates {
+  input[type="radio"] {
+    display: none;
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}

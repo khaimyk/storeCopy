@@ -1,0 +1,59 @@
+@import "variables";
+
+.container {
+  @include backfon;
+  padding: 30px;
+  margin-top: 30px;
+  @media screen and (max-width: $bp-desktop) {
+    padding: 15px;
+  }
+  @media screen and (max-width: $bp-tablet) {
+    padding: 5px;
+  }
+  table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 5px;
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 14px;
+      padding: 3px;
+      height: 40px;
+      vertical-align: top;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 10px;
+      padding: 1px;
+      height: 30px;
+      vertical-align: top;
+    }
+  }
+  table,
+  th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-radius: 10px;
+  }
+  th,
+  td {
+    padding: 5px;
+  }
+  span {
+    padding-left: 3px;
+  }
+  .product {
+    margin-top: 30px;
+  }
+  .footer {
+    td {
+      border: 1px solid black;
+    }
+  }
+}
+.header {
+  h1 {
+    @include backfon;
+    text-align: center;
+    padding: 30px 30px;
+    font-size: 25px;
+  }
+}
